@@ -3,7 +3,7 @@ class Solution {
   Solution(vector<int>& w) {
     // sum the weights
     sum = w;
-    for (int i = 1; i < w.size(); ++i) {
+    for (int i = 1; i < w.size(); i++) {
       sum[i] = sum[i - 1] + w[i];
     }
   }
